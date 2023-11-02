@@ -1,0 +1,39 @@
+:host{
+  min-height: 90vh;
+  display: block;
+}
+
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+  
+  .person {
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+  }
+  
+  .person h3 {
+    font-size: 18px;
+  }
+  
+  .role {
+    font-weight: bold;
+    color: #555;
+  }
+
+
+  .rowAbout{
+    margin-top: 1%;
+  }

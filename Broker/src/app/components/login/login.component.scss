@@ -1,0 +1,53 @@
+.formLogin{
+    color: aliceblue;
+    width: 50%;
+    background-color: #1F7A8C;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 150px auto;
+    padding: 50px 30px;
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .formDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        p {
+            font-size: 18px;
+            margin-top: 15px;
+            a {
+                text-decoration: none;
+                color: #022B3A;
+            }
+        }
+        .formLogin-button{
+            background-color: #022B3A;
+            border-radius: 10px;
+            color: aliceblue;
+            border: none;
+            font-size: 20px;
+            margin-top: 10px;
+            padding: 5px 70px;
+            width:100%;
+            
+        }
+    }
+    
+}
+
+
+:host{
+    min-height: 70vh;
+    display: block;
+}
+
+:root {
+    --color-verde-oscuro: #022B3A;
+    --color-verde-claro: #1F7A8C;
+    --color-blanco: #FFFFFF;
+    --color-gris: #E1E5F2;
+  }

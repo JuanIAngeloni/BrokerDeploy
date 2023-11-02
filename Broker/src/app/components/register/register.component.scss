@@ -1,0 +1,26 @@
+.register-form {
+    max-width: 650px;
+    margin: 150px auto;
+    padding: 50px 30px;
+    color: white;
+    border-radius: 10px;
+    background-color: #1F7A8C;
+}
+
+.btn-primary {
+    background-color: #022B3A;
+    border-color: #022B3A;
+}
+
+// Validacion de formularios
+.ng-invalid:not(form).ng-touched {
+    border-left: 5px solid #a94442;
+}
+.ng-valid:not(form).ng-touched {
+    border-left: 5px solid #42A948;
+}
+
+:host{
+    min-height: 70vh;
+    display: block;
+}

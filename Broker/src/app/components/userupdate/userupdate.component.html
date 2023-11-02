@@ -1,0 +1,46 @@
+<div class="container register-form">
+  <h2 class="mb-4">Registro</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="submitForm()" id="form-register">
+      <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" formControlName="nombre" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+          <div class="alert alert-danger p-2 mt-1" *ngIf="registerForm.get('nombre')?.invalid && (registerForm.get('nombre')?.dirty || registerForm.get('nombre')?.touched)">
+            <p class="mb-0" *ngIf="registerForm.get('nombre')?.errors?.['required']">El nombre es requerido</p>
+          </div>
+      </div>
+      <!-- Repite la estructura similar para las demás propiedades -->
+      <!-- Aplica el mismo enfoque a las otras propiedades (apellido, dni, correo, nacimiento, contraseña) -->
+      <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" formControlName="apellido" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+          <div class="alert alert-danger p-2 mt-1" *ngIf="registerForm.get('apellido')?.invalid && (registerForm.get('apellido')?.dirty || registerForm.get('apellido')?.touched)">
+            <p class="mb-0" *ngIf="registerForm.get('apellido')?.errors?.['required']">El apellido es requerido</p>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="correo">Correo:</label>
+          <input type="email" formControlName="correo" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+          <div class= "alert alert-danger p-2 mt-1" *ngIf="registerForm.get('correo')?.invalid && (registerForm.get('correo')?.dirty || registerForm.get('correo')?.touched)">
+            <p class="mb-0" *ngIf="registerForm.get('correo')?.errors?.['required']">El correo es requerido</p>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" formControlName="contraseña" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" >
+          <div class="alert alert-danger p-2 mt-1" *ngIf="registerForm.get('contraseña')?.invalid && (registerForm.get('contraseña')?.dirty || registerForm.get('contraseña')?.touched)">
+            <p class="mb-0" *ngIf="registerForm.get('contraseña')?.errors?.['required']">La contraseña es requerida</p>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" formControlName="telefono" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+          <p class="mb-0" *ngIf="registerForm.get('telefono')?.errors?.['required']">El telefono es requerido</p>
+      </div>
+      <div class="form-group d-grid">
+          <button type="submit" class="btn btn-primary">REGISTRAR</button>
+      </div>
+      <div class="alert alert-danger mt-2" [ngStyle]="mostrarMsgError ? {'display': 'block'} : {'display': 'none'}">
+        {{msgError}}
+      </div>
+  </form>
+</div>

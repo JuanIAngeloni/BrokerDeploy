@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "o13bQb06hDlU/ipEIiAFUPuTIZzPQZxz/M74p2RGQLw=",
+  "Source": "ArgBrokerAPI",
+  "BasePath": "_content/ArgBrokerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

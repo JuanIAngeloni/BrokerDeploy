@@ -1,0 +1,42 @@
+<section class="quote-container">
+  <h2 class="quote-title">Cotización de Acciones Argentinas</h2>
+
+  <div class="table-scroll">
+
+    <table class="table-custom" no-bootstrap>
+      <tr class="table-header">
+        <th>Símbolo</th>
+        <th class="hide-on-mobile">Último Operado</th>
+        <th>Variación Diaria</th>
+        <th class="hide-on-mobile">Cantidad Compra</th>
+        <th>Precio Compra</th>
+        <th>Precio Venta</th>
+        <th class="hide-on-mobile">Cantidad Venta</th>
+        <th class="hide-on-tablet">Apertura</th>
+        <th class="hide-on-tablet">Mínimo</th>
+        <th class="hide-on-tablet">Máximo</th>
+        <th class="hide-on-tablet">Último Cierre</th>
+        <th class="hide-on-tablet">Monto Operado</th>
+      </tr>
+
+      <tr class="table-data" *ngFor="let item of datos.titulos">
+        <td>{{ item.simbolo }}</td>
+        <td class="hide-on-mobile">{{ item.ultimoPrecio }}</td>
+        <td>{{ item.variacionPorcentual }}%</td>
+        <td class="hide-on-mobile">{{ item.puntas? item.puntas.cantidadCompra : '-' }}</td>
+        <td>{{ item.puntas? item.puntas.precioCompra : '-' }}</td>
+        <td>{{ item.puntas? item.puntas.precioVenta : '-' }}</td>
+        <td class="hide-on-mobile">{{ item.puntas? item.puntas.cantidadVenta : '-' }}</td>
+        <td class="hide-on-tablet">{{ item.puntas? item.apertura : '-' }}</td>
+        <td class="hide-on-tablet">{{ item.minimo }}</td>
+        <td class="hide-on-tablet">{{ item.maximo }}</td>
+        <td class="hide-on-tablet">{{ item.ultimoCierre }}</td>
+        <td class="hide-on-tablet">{{ item.volumen }}</td>
+      </tr>
+      
+    </table>
+  </div>
+
+</section>
+
+

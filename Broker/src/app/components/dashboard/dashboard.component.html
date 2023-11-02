@@ -1,0 +1,83 @@
+<div class="container mt-5 main_container">
+        
+    <h2 class="mb-3">Mi Portafolio</h2>
+  
+    <div class="row justify-content-around portfolio_row">
+        <div class="col-md-12 col-lg-2 mx-2 mt-4 portfolio_div">
+            <h3>Fondos Totales</h3>
+
+            <h4>{{totalFunds.toFixed(2)}}</h4>
+        </div>
+        <div class="col-md-12 col-lg-2 mx-2 mt-4 portfolio_div">
+            <h3>Fondos</h3>
+
+            <h4>{{dineroDisponible}}</h4>
+        </div>
+        <div class="col-md-12 col-lg-2 mx-2 mt-4 portfolio_div">
+            <h3>Ganancia Diaria</h3>
+            <h4>${{dailyGains}}</h4>
+        </div>
+    </div>
+    
+
+
+
+    <div *ngIf="isMobile">
+        <table *ngFor="let compra of listCompras;" class="table table-bordered table-striped mt-4 portfolio_table">
+            <thead>
+                <tr>
+                    <th colspan="2">Simbolo: {{compra.simbolo}}</th>
+                </tr>
+            </thead>
+            <tbody class="table-row">
+                <tr>
+                    <td>Cantidad</td>
+                    <td>{{compra.cantidad}}</td>
+                </tr>
+                <tr>
+                    <td>Precio Compra</td>
+                    <td>${{compra.precio / compra.cantidad}}
+                        </td>
+                </tr>
+                <tr>
+                    <td>Precio Actual</td>
+                    <td>${{compra.precio / compra.cantidad}}</td>
+                </tr>
+                <tr>
+                    <td>Ganancia</td>
+                    <td>%{{0}}</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>${{compra.precio}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="!isMobile">
+        <table class="table table-bordered table-striped mt-4 portfolio_table">
+            <thead>
+                <tr>
+                    <th>Simbolo</th>
+                    <th>Cantidad</th>
+                    <th>Precio Compra</th>
+                    <th>Precio Actual</th>
+                    <th>Ganancia</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody class="table_row">
+                <tr *ngFor="let compra of listCompras; let i = index">
+                    <td>{{compra.simbolo}}</td>
+                    <td>{{compra.cantidad}}</td>
+                    <td>${{compra.precio / compra.cantidad}}</td>
+                    <td>${{compra.precio / compra.cantidad}}</td>
+                    <td>%{{0}}</td>
+                    <td>${{compra.precio}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+  </div>

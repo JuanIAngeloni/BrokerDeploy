@@ -1,0 +1,67 @@
+@import '../../../../node_modules/ngx-toastr/toastr.css';
+
+:host{
+    min-height: 80vh;
+    display: block;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_container {
+    max-width: 80%;
+    margin: 60px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; 
+}
+
+.info_portfolio_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.portfolio_row {
+    height: 80%;
+    width: 100%;
+}
+
+.portfolio_div {
+    height: 100%; 
+    background-color: #BFDBF7;
+    border: 1px solid #ced4da; /* Add a 1px solid border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 10px;
+    text-align: center;
+}
+
+.portfolio_div h3 {
+    color: #022B3A;
+}
+
+.portfolio_div h4 {
+    color: #1F7A8C;
+}
+
+.portfolio_table th {
+    background-color: #3447F4; 
+    color: white; 
+}
+
+.row-mobile  td{
+    width: 50%;
+}

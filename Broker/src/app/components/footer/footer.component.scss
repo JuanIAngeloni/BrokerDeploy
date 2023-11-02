@@ -1,0 +1,18 @@
+:root {
+    --color-verde-oscuro: #022B3A;
+    --color-verde-claro: #1F7A8C;
+    --color-blanco: #FFFFFF;
+    --color-gris: #E1E5F2
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+:host {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}

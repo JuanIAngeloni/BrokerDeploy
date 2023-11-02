@@ -1,0 +1,42 @@
+:root {
+    --color-verde-oscuro: #022B3A;
+    --color-verde-claro: #1F7A8C;
+    --color-blanco: #FFFFFF;
+    --color-gris: #E1E5F2
+  }
+  
+  
+  nav{
+    background-color:#1F7A8C;
+    height: auto;
+  }
+  
+  .button{
+    background-color: #022B3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition:all  0.2s ease-in-out;
+  }
+  
+  .button:hover{
+    background-color: #FFFFFF;
+    color: #022B3A;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .title{
+    color: #FFFFFF;
+   
+  }
+  
+  .navbar__list{
+    font-size: 1rem;
+    font-weight: 400;
+  }

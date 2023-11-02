@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACSM+ViEuokC+5whFV2p0vAAAAAACAAAAAAAQZgAAAAEAACAAAAATbW1KAfif0wKmJjo0l3JsaDb2LjacruWK6rl464X6GQAAAAAOgAAAAAIAACAAAABNPsvrDtgIZfbtVdmDNoPQi7NPV4CRv+s7bP2bmzbp5YAAAADolBx6CXBQXbw90k/rHBEfx+nKmo4k6IQ5u63KwvWkYQ3OocL52VsFDDXZjZXHf6sZBUug9dZqwJB3jiWa39be3q1lv5sZgF/GmIJM402NbaIwr2bWr7FvT4vNEjODDLU39abQVjolBpAVSbnHxswClGorb2mWfr99qqKTdWmZMkAAAAA963JSrDpXgYcKiLuXQrAQNMaiXnOodiGu2wimH2ymMytqALDEpN237zvZ67AOW3bUmWJM/OSFGZaDKk+VLr2P</EncryptedPassword>
+    <History>True|2023-11-02T19:22:51.9840567Z;True|2023-11-02T16:06:09.6654293-03:00;False|2023-11-02T16:01:35.5641265-03:00;False|2023-11-02T16:01:05.7607033-03:00;False|2023-11-02T15:59:46.5582262-03:00;False|2023-11-02T15:56:55.5182458-03:00;False|2023-11-02T15:56:12.2838817-03:00;False|2023-11-02T15:18:56.0172674-03:00;False|2023-11-02T15:16:50.5931767-03:00;False|2023-11-02T15:04:09.1455372-03:00;False|2023-11-02T14:59:40.9713416-03:00;False|2023-11-02T14:56:08.4775833-03:00;False|2023-11-02T14:55:25.1753249-03:00;False|2023-11-02T14:38:42.4775184-03:00;False|2023-11-02T14:33:46.8721719-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="argBrokerDB">
+      <Value>Server=tcp:broker-base-server.database.windows.net,1433%3bInitial Catalog=argBrokerDB%3bPersist Security Info=False%3bUser ID=JuaniUser%3bPassword=UserParaBroker1%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ArgBrokerAPI.DataSet.argBrokerDbContext">
+      <Value>Server=tcp:broker-base-server.database.windows.net,1433%3bInitial Catalog=argBrokerDB%3bPersist Security Info=False%3bUser ID=JuaniUser%3bPassword=UserParaBroker1%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
